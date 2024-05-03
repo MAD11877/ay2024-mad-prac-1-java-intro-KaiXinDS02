@@ -16,12 +16,12 @@ public class Question4
      * 
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
-     
+
     Scanner in = new Scanner(System.in);
     System.out.print("Enter the base size of the triangle: ");
     int base = in.nextInt();
 
-    for (int i < base; i>0;i--){
+    for (int i = base; i > 0; i--) {
       for (int j = 0; j < i; j++) {
         System.out.print("*");
       }
@@ -29,4 +29,3 @@ public class Question4
     }
   }
 }
-
