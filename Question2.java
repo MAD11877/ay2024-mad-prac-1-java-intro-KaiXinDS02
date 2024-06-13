@@ -1,26 +1,23 @@
-import static org.junit.Assert.assertEquals;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-import org.junit.Test;
+import java.util.Scanner;
 
 public class Question2 {
-    @Test
-    public void BMITest() {
-        // Simulate user input
-        String input = "1.75\n70\n";
-        ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
+    public static void main(String[] args) {
+        /**
+         * Prompts user for height and weight, calculate and print out the BMI of the user
+         * 
+         * Hint: in.nextDouble() to read double
+         */
 
-        // Capture the output
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(out));
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter your height: ");
+        double height = in.nextDouble();
 
-        // Call the main method
-        Question2.main(new String[0]);
+        System.out.print("Enter your weight: ");
+        double weight = in.nextDouble();
 
-        // Check the output
-        String expectedOutput = "Enter your height: Enter your weight: 22.857142857142858\n";
-        assertEquals(expectedOutput, out.toString().trim());
+        double bmi = weight / (height * height);
+
+        System.out.println(bmi);
     }
 }
+
