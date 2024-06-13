@@ -27,7 +27,7 @@ public class Question5 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("");
         int count = scanner.nextInt();
-
+        // hi
         int[] numbers = new int[count];
         System.out.println("");
         for (int i = 0; i < count; i++) {
