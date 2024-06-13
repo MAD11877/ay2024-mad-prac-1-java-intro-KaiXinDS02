@@ -4,7 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import org.junit.Test;
 
-public class Question2Test {
+public class Question2 {
     @Test
     public void BMITest() {
         // Simulate user input
